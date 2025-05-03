@@ -15,8 +15,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'ImproofFund | by Yuri Improof',
-  description: 'A web3 funding platform by Yuri Improof',
+  title: 'ImproofFund | Decentralized Funding Platform',
+  description:
+    'A web3 funding platform by Yuri Improof. Connect your wallet to fund or withdraw ETH using the ImproofFund smart contract.',
+  keywords: [
+    'blockchain',
+    'ethereum',
+    'web3',
+    'funding',
+    'dapp',
+    'decentralized',
+    'smart contract',
+  ],
+  authors: [{ name: 'Yuri Improof' }],
+  openGraph: {
+    title: 'ImproofFund | Decentralized Funding Platform',
+    description:
+      'Connect your wallet to fund or withdraw ETH using the ImproofFund smart contract.',
+    siteName: 'ImproofFund',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
