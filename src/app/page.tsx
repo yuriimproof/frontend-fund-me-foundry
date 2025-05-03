@@ -21,16 +21,18 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full sm:w-96 mb-6">
-        <ConnectWallet />
+      <div className="w-full flex flex-col flex-grow">
+        <div className="w-full sm:w-96 mx-auto mb-6">
+          <ConnectWallet />
+        </div>
+
+        <div className="w-full max-w-2xl mx-auto space-y-6">
+          <ContractInfo />
+          <FundMe />
+        </div>
       </div>
 
-      <div className="w-full max-w-2xl space-y-6">
-        <ContractInfo />
-        <FundMe />
-      </div>
-
-      <footer className="mt-8 text-center text-gray-500 dark:text-gray-400 text-sm">
+      <footer className="w-full py-6 mt-auto text-center text-gray-500 dark:text-gray-400 text-sm border-t border-gray-100 dark:border-gray-800">
         <p>Built by Yuri Improof • Next.js • Tailwind • wagmi</p>
       </footer>
     </main>
